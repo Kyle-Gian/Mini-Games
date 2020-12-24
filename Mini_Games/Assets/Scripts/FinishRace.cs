@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class FinishRace : MonoBehaviour
 {
+    GameObject _player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject == _player)
+        {
+
+        }
     }
+
 }

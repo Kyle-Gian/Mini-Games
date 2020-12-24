@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Finish Line
   - Starting Line
+  - Spawn Location
+  - Spikes
   layers:
   - Default
   - TransparentFX

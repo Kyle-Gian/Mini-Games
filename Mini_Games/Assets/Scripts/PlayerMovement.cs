@@ -35,7 +35,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         _moveDirection = new Vector3(_inputVector.y, 0, -_inputVector.x);
-        //_moveDirection = transform.TransformDirection(_moveDirection);
         _moveDirection *= _moveSpeed;
         rb.AddForce(_moveDirection * Time.deltaTime);
     }
